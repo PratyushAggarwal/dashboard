@@ -11,7 +11,6 @@ root.render(
         <div className='content-page'>
             <div className='content'>
                 <Card1s />
-                <ApexChart2 />
             </div>
         </div>
     </div>
