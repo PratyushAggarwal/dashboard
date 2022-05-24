@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Map from './Components/Map';
 import Card1s from './Components/Card1s';
-import ApexChart1 from './Components/ApexChar1';
+import ApexChart2 from './Components/ApexChart2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,7 +11,7 @@ root.render(
         <div className='content-page'>
             <div className='content'>
                 <Card1s />
-                <ApexChart1 />
+                <ApexChart2 />
             </div>
         </div>
     </div>
