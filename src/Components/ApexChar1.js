@@ -18,7 +18,7 @@ class ApexChart1 extends Component {
         this.state = {
           series: [{
             name: 'PRODUCT A',
-            data: [44000, 55000, 41000, 67000, 22000, 43000,44000, 55000, 41000, 67000, 22000, 43000],
+            data: [144000, 55000, 41000, 67000, 22000, 43000,44000, 55000, 41000, 67000, 22000, 43000],
           }, {
             name: 'PRODUCT B',
             data: [13000, 23000, 20000, 8000, 13000, 27000, 13000, 23000, 20000, 8000, 13000, 27000]
@@ -30,7 +30,7 @@ class ApexChart1 extends Component {
             position: 'back',
             chart: {
                 type: 'bar',
-                height: 350,
+                height: '256px',
                 stacked: true,
                 toolbar: {
                   show: false
@@ -39,7 +39,7 @@ class ApexChart1 extends Component {
             plotOptions: {
                 bar: {
                   horizontal: false,
-                  columnWidth: '20%',
+                  columnWidth: '18%',
                 },
               },
             xaxis: {
@@ -56,9 +56,9 @@ class ApexChart1 extends Component {
               }
             },
             fill: {
-              opacity: 0.8
+              opacity: 0.75
             },
-            colors: ['#727cf5','#6C757D'],   
+            colors: ['#727cf5','#adb5bd'],   
             legend: {
               position: 'right',
               offsetY: 400
@@ -80,7 +80,7 @@ class ApexChart1 extends Component {
           
 
     <div id="chart">
-        <ReactApexChart options={this.state.grid} series={this.state.series} type="bar" height={350} />
+        <ReactApexChart options={this.state.grid} series={this.state.series} type="bar" height={256} />
     </div>
         );
     }

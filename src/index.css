@@ -258,6 +258,24 @@
   --ct-apex-grid-color: #f9f9fd;
   --ct-hero-bg: linear-gradient(to bottom, #8669ed, #727cf5);
 }
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+#chart {
+  max-width: 760px;
+  margin: 35px auto;
+  opacity: 0.9;
+}
+
+#timeline-chart .apexcharts-toolbar {
+  opacity: 1;
+  border: 0;
+}
+
 body {
   margin: 0;
   font-family: var(--ct-font-sans-serif);
@@ -317,6 +335,9 @@ h5{
 .mt-3{
   margin-top: 24px !important;
 }
+.mt-0{
+  margin-top: 0!important;
+}
 .h3, h3{
   font-size: calc(21px + .3vm) !important;
 }
@@ -328,13 +349,12 @@ h5{
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: normal;
-  flex-direction: column;
+  flex-direction: row;
   min-width: 0;
   word-wrap: break-word;
   background-color: var(--ct-card-bg);
   background-clip: border-box;
   border: none !important;
-  /* border: 1px solid var(--ct-card-border-color); */
   border-radius: .25rem;
   margin-bottom: 24px !important;
 }
@@ -347,7 +367,9 @@ h5{
 .me-2{
   margin-right: .75rem !important;
 }
-
+.border-boxing{
+  box-sizing: border-box;
+}
 .text-muted {
   --ct-text-opacity: 1;
   color: var(--ct-text-muted) !important;
@@ -366,6 +388,7 @@ h5{
 p{
   font-size: 14.4px !important;
 }
+
 /* card1 icons styling */
 .widget-icon{
   color: #727cf5;
@@ -377,6 +400,11 @@ p{
   line-height: 40px;
   border-radius: 3px;
   display: inline-block;
+}
+
+/* apexchart1 styling */
+.card-h-100{
+  height:calc(100% - 24px);
 }
 @media (max-width:767.98px){
   .content-page{
