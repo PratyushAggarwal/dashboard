@@ -7,54 +7,25 @@ class ApexChart1 extends Component {
     constructor(props) {
         super(props);
 
+      var labelFormatter = function(value) {
+        var val = Math.abs(value);
+        if (val >= 1000) {
+          val = (val / 1000) + "K";
+        }
+        return val;
+      };
+
         this.state = {
           series: [{
             name: 'PRODUCT A',
-            data: [44000, 55000, 41000, 67000, 22000, 43000],
+            data: [44000, 55000, 41000, 67000, 22000, 43000,44000, 55000, 41000, 67000, 22000, 43000],
           }, {
             name: 'PRODUCT B',
-            data: [13000, 23000, 20000, 8000, 13000, 27000]
+            data: [13000, 23000, 20000, 8000, 13000, 27000, 13000, 23000, 20000, 8000, 13000, 27000]
           }],
-          options: {
-            chart: {
-              type: 'bar',
-              height: 350,
-              stacked: true,
-              toolbar: {
-                show: false
-              }
-            },
-            responsive: [{
-            //   breakpoint: 480,
-              options: {
-                legend: {
-                  position: 'bottom',
-                  offsetX: -10,
-                  offsetY: 0
-                }
-              }
-            }],
-            plotOptions: {
-              bar: {
-                horizontal: false,
-              },
-            },
-            xaxis: {
-              categories: ['Jan', 'Feb', 'Mar', 'Apr',
-                'May', 'Jun'
-              ],
-            },
-            legend: {
-              position: 'right',
-              offsetY: 400
-            },
-            fill: {
-              opacity: 1
-            }
-          },
           grid: {
             show: true,
-            borderColor: '#90A4AE',
+            borderColor: 'white',
             strokeDashArray: 0,
             position: 'back',
             chart: {
@@ -68,24 +39,34 @@ class ApexChart1 extends Component {
             plotOptions: {
                 bar: {
                   horizontal: false,
-                  columnWidth: '10%',
+                  columnWidth: '20%',
                 },
               },
             xaxis: {
-                categories: ['Jan', 'Feb', 'Mar', 'Apr',
-                'May', 'Jun'
-              ],
+                categories: ['Jan', 'Feb', 'Mar', 'Apr','May', 'Jun', 'Jul', 'Aug','Sep','Oct','Nov','Dec'],
                 lines: {
                     show: true
                 }
             },
+            yaxis: {
+              max: 200000,
+              tickAmount: 5,
+              labels: {
+                formatter: labelFormatter,
+              }
+            },
+            fill: {
+              opacity: 0.8
+            },
             colors: ['#727cf5','#6C757D'],   
-            padding: {
-                top: 100,
-                right: 100,
-                bottom: 0,
-                left: 0
-            },  
+            legend: {
+              position: 'right',
+              offsetY: 400
+            },
+            dataLabels: {
+              enabled: false,
+            },
+            
         }
         
         
