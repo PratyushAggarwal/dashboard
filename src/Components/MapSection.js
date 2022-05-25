@@ -3,7 +3,9 @@ import Map from './Map';
 
 const MapSection = () => {
     return(
-        <Map />
+        <div style={{width:'100%'}}>
+            <Map />
+        </div>
     );
 }
 

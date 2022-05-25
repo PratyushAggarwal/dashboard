@@ -390,9 +390,10 @@ p{
 }
 
 /* card1 icons styling */
+
 .widget-icon{
   color: #727cf5;
-  font-size: 20ps;
+  padding: 8px;
   background-color: rgba(114, 124, 245, .25);
   height: 40px;
   width: 40px;
@@ -410,8 +411,52 @@ p{
   height:calc(100% - 24px);
 }
 .progress-w-percent{
-  min-height: 20px;
+  min-height: 10px;
   margin-bottom: 20px;
+}
+
+.progress-w-percent .progress-value {
+  width: 40px;
+  float: right;
+  text-align: right;
+  line-height: 20px;
+}
+.progress-w-percent .progress {
+  width: calc(100% - 50px);
+  float: left;
+  margin-top: 8px;
+}
+.progress-sm {
+  height: 5px;
+}
+.progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0.5rem;
+  overflow: hidden;
+  font-size: .675rem;
+  background-color: var(--ct-progress-bg);
+  border-radius: .25rem;
+}
+.progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  color: var(--ct-progress-bar-color);
+  text-align: center;
+  white-space: nowrap;
+  background-color: var(--ct-progress-bar-bg);
+  -webkit-transition: width .6s ease;
+  transition: width .6s ease;
 }
 @media (max-width:767.98px){
   .content-page{

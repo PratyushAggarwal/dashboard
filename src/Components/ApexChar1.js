@@ -18,10 +18,10 @@ class ApexChart1 extends Component {
         this.state = {
           series: [{
             name: 'PRODUCT A',
-            data: [144000, 55000, 41000, 67000, 22000, 43000,44000, 55000, 41000, 67000, 22000, 43000],
+            data: [144000, 55000, 41000, 67000, 22000, 43000,144000, 55000, 41000, 67000, 22000, 43000],
           }, {
             name: 'PRODUCT B',
-            data: [13000, 23000, 20000, 8000, 13000, 27000, 13000, 23000, 20000, 8000, 13000, 27000]
+            data: [53000, 83000, 40000, 38000, 93000, 127000, 13000, 93000, 120000, 18000, 113000, 27000]
           }],
           grid: {
             show: true,
@@ -56,9 +56,9 @@ class ApexChart1 extends Component {
               }
             },
             fill: {
-              opacity: 0.75
+              opacity: 1
             },
-            colors: ['#727cf5','#adb5bd'],   
+            colors: ['#727cf5','#E3EAEF'],   
             legend: {
               position: 'right',
               offsetY: 400
