@@ -30,7 +30,7 @@ class ApexChart1 extends Component {
             position: 'back',
             chart: {
                 type: 'bar',
-                height: '256px',
+                height: '300px',
                 stacked: true,
                 toolbar: {
                   show: false
@@ -60,8 +60,7 @@ class ApexChart1 extends Component {
             },
             colors: ['#727cf5','#E3EAEF'],   
             legend: {
-              position: 'right',
-              offsetY: 400
+              show: false,
             },
             dataLabels: {
               enabled: false,
@@ -80,7 +79,7 @@ class ApexChart1 extends Component {
           
 
     <div id="chart">
-        <ReactApexChart options={this.state.grid} series={this.state.series} type="bar" height={256} />
+        <ReactApexChart options={this.state.grid} series={this.state.series} type="bar" height={256} width='100%'/>
     </div>
         );
     }

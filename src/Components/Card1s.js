@@ -67,31 +67,33 @@ const Card1s = () => {
                                     </div>
                                 </div>
                             </div>
+                            
+
                             <div dir='ltr'>
                                 <ApexChart2 />
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className='col-lg-4'>
+                <div className='col-lg-4'>
                 <div className='card'>
                     <div className='card-body'>
                         <div className='d-flex justify-content-between align-items-center'>
                             <h4 className='header-title'>Revenue By Location</h4>
                         </div>
                         <div className='mb-4 mt-3' styles={{width: '100%'}}>
-                            <Map />
+                            <Map width="100%"/>
                         </div>
-                        <h5 class="mb-1 mt-0 fw-normal">New York</h5>
+                        <h5 className="mb-1 mt-0 fw-normal">New York</h5>
                         <ProgressBar progress='72' />
-                        <h5 class="mb-1 mt-0 fw-normal">San Francisco</h5>
+                        <h5 className="mb-1 mt-0 fw-normal">San Francisco</h5>
                         <ProgressBar progress='39' />
-                        <h5 class="mb-1 mt-0 fw-normal">Sydney</h5>
+                        <h5 className="mb-1 mt-0 fw-normal">Sydney</h5>
                         <ProgressBar progress='25' />
-                        <h5 class="mb-1 mt-0 fw-normal">Singapore</h5>
+                        <h5 className="mb-1 mt-0 fw-normal">Singapore</h5>
                         <ProgressBar progress='61' />
                     </div>
+                </div>
                 </div>
             </div>
         </div>

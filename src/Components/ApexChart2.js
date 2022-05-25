@@ -37,15 +37,14 @@ class ApexChart2 extends React.Component {
         options: {
           chart: {
             type: 'line',
-            height: 256,
             foreColor: "#999",
             dropShadow: {
             enabled: true,
-            enabledSeries: [1],
+            enabledSeries: [0],
             top: -4,
             left: 3,
             blur: 7,
-            opacity: 0.25
+            opacity: 0.35
             },
             toolbar: {
                 show: false
@@ -78,7 +77,6 @@ class ApexChart2 extends React.Component {
                 datetimeFormatter: {
                     day:'dd MMM'
                 },
-                
             },
             axisBorder: {
               show: false
@@ -93,8 +91,8 @@ class ApexChart2 extends React.Component {
           },
           yaxis: {
             labels: {
-              offsetX: 14,
-              offsetY: 0
+              offsetX: 0,
+              offsetY: 1
             },
           },
           grid: {
@@ -103,14 +101,9 @@ class ApexChart2 extends React.Component {
               right: 5
             }
           },
-          tooltip: {
-            x: {
-              format: "dd MMM yyyy"
-            },
-          },
           legend: {
             position: 'right',
-            offsetY: 400
+            offsetY: 900
           },
           fill: {
             type: "solid",
@@ -122,7 +115,7 @@ class ApexChart2 extends React.Component {
     render() {
         return (
             <div id="chart">
-                <ReactApexChart options={this.state.options} series={this.state.series} height={364} />
+                <ReactApexChart options={this.state.options} series={this.state.series} height={356} />
             </div>
         );
     }
