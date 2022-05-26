@@ -9,6 +9,9 @@ import {MdAddShoppingCart} from "react-icons/md"
 import {FaDollarSign} from "react-icons/fa"
 import {BiPulse} from "react-icons/bi"
 import {RiCheckboxBlankCircleFill} from 'react-icons/ri'
+import Donutchart from './Donutchart';
+import Card4 from './card4';
+import Card3s from './card3s';
 
 const Card1s = () => {
     return (
@@ -95,6 +98,10 @@ const Card1s = () => {
                     </div>
                 </div>
                 </div>
+            </div>
+            <div className='row'>
+                <Card4 />
+                <Card3s />
             </div>
         </div>
     );
