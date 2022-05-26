@@ -265,17 +265,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-#chart {
-  max-width: 760px;
-  margin: 35px auto;
-  opacity: 0.9;
-}
-
-#timeline-chart .apexcharts-toolbar {
-  opacity: 1;
-  border: 0;
-}
-
 body {
   margin: 0;
   font-family: var(--ct-font-sans-serif);
@@ -412,7 +401,7 @@ p{
 }
 .progress-w-percent{
   min-height: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .progress-w-percent .progress-value {
