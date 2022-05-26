@@ -1,6 +1,5 @@
 import React from "react";
 import DonutChart from "./Donutchart";
-import Donutchart from "./Donutchart";
 
 const Card3 = (props) => {
   return (

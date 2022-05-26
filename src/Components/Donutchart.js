@@ -1,7 +1,4 @@
-import { rgbToHex } from "@mui/material";
-import { width } from "@mui/system";
 import React, { Component } from "react";
-import Chart from "react-apexcharts";
 import ReactApexChart from "react-apexcharts";
 
 class ApexChart1 extends Component {

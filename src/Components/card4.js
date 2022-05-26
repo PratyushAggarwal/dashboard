@@ -1,5 +1,4 @@
 import React from "react";
-// import GroupAddIcon from '@mui/icons-material/GroupAdd';
 import Elements from "./Element4";
 
 const Card4 = (props) => {
