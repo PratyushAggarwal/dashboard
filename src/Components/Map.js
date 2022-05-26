@@ -2,10 +2,9 @@ import React from "react";
 import { VectorMap } from "react-jvectormap";
 
 export default class Map extends React.Component {
-  width2 = "100%";
   render() {
     return (
-      <div style={{ width: this.width2, height: 224 }}>
+      <div style={{ width: "100%", height: 224 }}>
         <VectorMap
           map={"world_mill"}
           backgroundColor="#FFFF"

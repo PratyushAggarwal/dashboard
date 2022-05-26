@@ -5,7 +5,7 @@ const Element5 = (props) => {
     <div class="timeline-item">
       <i class="mdi mdi-upload bg-info-lighten text-info timeline-icon"></i>
       <div class="timeline-item-info">
-        <a href="javascript:void(0);" class="text-info fw-bold mb-1 d-block">
+        <a href="/" class="text-info fw-bold mb-1 d-block">
           {props.doer}
         </a>
         <small>{props.activity}</small>

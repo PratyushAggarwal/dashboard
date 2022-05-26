@@ -302,7 +302,7 @@ code {
 }
 
 .content-page{
-  margin-left: 260px;
+  /* margin-left: 260px; */
   overflow: hidden;
   padding: 7px 12px 65px;
   min-height: 100vh;

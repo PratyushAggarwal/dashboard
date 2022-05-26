@@ -36,7 +36,7 @@ const Activity = () => {
                         <i className="mdi mdi-upload bg-info-lighten text-info timeline-icon" />
                         <div className="timeline-item-info">
                           <a
-                            href="javascript:void(0);"
+                            href="/"
                             className="text-info fw-bold mb-1 d-block"
                           >
                             You sold an item
@@ -54,7 +54,7 @@ const Activity = () => {
                         <i className="mdi mdi-airplane bg-primary-lighten text-primary timeline-icon" />
                         <div className="timeline-item-info">
                           <a
-                            href="javascript:void(0);"
+                            href="/"
                             className="text-primary fw-bold mb-1 d-block"
                           >
                             Product on the Bootstrap Market
@@ -72,7 +72,7 @@ const Activity = () => {
                         <i className="mdi mdi-microphone bg-info-lighten text-info timeline-icon" />
                         <div className="timeline-item-info">
                           <a
-                            href="javascript:void(0);"
+                            href="/"
                             className="text-info fw-bold mb-1 d-block"
                           >
                             Robert Delaney
@@ -90,7 +90,7 @@ const Activity = () => {
                         <i className="mdi mdi-upload bg-primary-lighten text-primary timeline-icon" />
                         <div className="timeline-item-info">
                           <a
-                            href="javascript:void(0);"
+                            href="/"
                             className="text-primary fw-bold mb-1 d-block"
                           >
                             Audrey Tobey
@@ -108,7 +108,7 @@ const Activity = () => {
                         <i className="mdi mdi-upload bg-info-lighten text-info timeline-icon" />
                         <div className="timeline-item-info">
                           <a
-                            href="javascript:void(0);"
+                            href="/"
                             className="text-info fw-bold mb-1 d-block"
                           >
                             You sold an item
@@ -126,7 +126,7 @@ const Activity = () => {
                         <i className="mdi mdi-airplane bg-primary-lighten text-primary timeline-icon" />
                         <div className="timeline-item-info">
                           <a
-                            href="javascript:void(0);"
+                            href="/"
                             className="text-primary fw-bold mb-1 d-block"
                           >
                             Product on the Bootstrap Market
@@ -144,7 +144,7 @@ const Activity = () => {
                         <i className="mdi mdi-microphone bg-info-lighten text-info timeline-icon" />
                         <div className="timeline-item-info">
                           <a
-                            href="javascript:void(0);"
+                            href="/"
                             className="text-info fw-bold mb-1 d-block"
                           >
                             Robert Delaney

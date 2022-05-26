@@ -4,12 +4,12 @@ import Elements from "./Element4";
 const Card4 = (props) => {
   return (
     <div className="col-xl-6 col-lg-12 order-lg-2 order-xl-1">
-      <div class="card">
+      <div className="card">
         <div className="card-body">
           <div className="d-flex justify-content-between align-items-center mb-2">
             <h4 className="header-title">Top Selling Products</h4>
-            <a href="javascript:void(0);" className="btn btn-sm btn-link">
-              Export <i class="mdi mdi-download ms-1"></i>
+            <a href="/" className="btn btn-sm btn-link">
+              Export <i className="mdi mdi-download ms-1"></i>
             </a>
           </div>
           <div className="table-responsive">

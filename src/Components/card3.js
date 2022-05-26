@@ -10,6 +10,7 @@ const Card3 = (props) => {
             <h4 className="header-title">{props.header}</h4>
             <div className="dropdown">
               <a
+                href="/"
                 className="dropdown-toggle arrow-none card-drop"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -17,16 +18,16 @@ const Card3 = (props) => {
                 <i class="mdi mdi-dots-vertical"></i>
               </a>
               <div className="dropdown-menu dropdown-menu-end">
-                <a href="javascript:void(0);" className="dropdown-item">
+                <a href="/" className="dropdown-item">
                   Sales Report
                 </a>
-                <a href="javascript:void(0);" className="dropdown-item">
+                <a href="/" className="dropdown-item">
                   Export Report
                 </a>
-                <a href="javascript:void(0);" className="dropdown-item">
+                <a href="/" className="dropdown-item">
                   Profit
                 </a>
-                <a href="javascript:void(0);" className="dropdown-item">
+                <a href="/" className="dropdown-item">
                   Action
                 </a>
               </div>
