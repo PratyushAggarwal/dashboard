@@ -1,5 +1,6 @@
 import React from "react";
 import DonutChart from "./Donutchart";
+import {FaSquareFull} from "react-icons/fa";
 
 const Card3 = (props) => {
   return (
@@ -38,22 +39,22 @@ const Card3 = (props) => {
           </div>
           <div className="chart-widget-list">
             <p>
-              <i className="mdi mdi-square text-primary"></i>
+              <FaSquareFull className="text-primary" />
               {props.name1}
               <span className="float-end">${props.count1}</span>
             </p>
             <p>
-              <i className="mdi mdi-square text-danger"></i>
+            <FaSquareFull className="text-danger" />
               {props.name2}
               <span className="float-end">${props.count2}</span>
             </p>
             <p>
-              <i className="mdi mdi-square text-success"></i>
+            <FaSquareFull className="text-success" />
               {props.name3}
               <span className="float-end">${props.count3}</span>
             </p>
             <p className="mb-0">
-              <i className="mdi mdi-square text-warning"></i>
+            <FaSquareFull className="text-warning" />
               {props.name4}
               <span className="float-end">${props.count4}</span>
             </p>

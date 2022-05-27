@@ -1,15 +1,17 @@
 import React from "react";
-
+import {MdUpload,MdMic} from 'react-icons/md';
+import {GiCommercialAirplane} from 'react-icons/gi';
 const Activity = () => {
   return (
     <div className="col-xl-3 col-lg-6 order-lg-1">
       <div className="card">
         <div className="card-body pb-0">
+          
           <div className="d-flex justify-content-between align-items-center mb-2">
             <h4 className="header-title">Recent Activity</h4>
+            
           </div>
-        </div>
-        <div
+          <div
           className="card-body py-0"
           data-simplebar="init"
           style={{ maxHeight: 405 }}
@@ -33,7 +35,7 @@ const Activity = () => {
                   >
                     <div className="timeline-alt py-0">
                       <div className="timeline-item">
-                        <i className="mdi mdi-upload bg-info-lighten text-info timeline-icon" />
+                        <MdUpload className="bg-info-lighten text-info timeline-icon" />
                         <div className="timeline-item-info">
                           <a
                             href="/"
@@ -51,7 +53,7 @@ const Activity = () => {
                         </div>
                       </div>
                       <div className="timeline-item">
-                        <i className="mdi mdi-airplane bg-primary-lighten text-primary timeline-icon" />
+                        <GiCommercialAirplane className="bg-primary-lighten text-primary timeline-icon" />
                         <div className="timeline-item-info">
                           <a
                             href="/"
@@ -69,7 +71,7 @@ const Activity = () => {
                         </div>
                       </div>
                       <div className="timeline-item">
-                        <i className="mdi mdi-microphone bg-info-lighten text-info timeline-icon" />
+                        <MdMic className="bg-info-lighten text-info timeline-icon" />
                         <div className="timeline-item-info">
                           <a
                             href="/"
@@ -87,7 +89,7 @@ const Activity = () => {
                         </div>
                       </div>
                       <div className="timeline-item">
-                        <i className="mdi mdi-upload bg-primary-lighten text-primary timeline-icon" />
+                        <MdUpload className="bg-primary-lighten text-primary timeline-icon" />
                         <div className="timeline-item-info">
                           <a
                             href="/"
@@ -105,7 +107,7 @@ const Activity = () => {
                         </div>
                       </div>
                       <div className="timeline-item">
-                        <i className="mdi mdi-upload bg-info-lighten text-info timeline-icon" />
+                        <MdUpload className="bg-info-lighten text-info timeline-icon" />
                         <div className="timeline-item-info">
                           <a
                             href="/"
@@ -123,7 +125,7 @@ const Activity = () => {
                         </div>
                       </div>
                       <div className="timeline-item">
-                        <i className="mdi mdi-airplane bg-primary-lighten text-primary timeline-icon" />
+                        <GiCommercialAirplane className="bg-primary-lighten text-primary timeline-icon" />
                         <div className="timeline-item-info">
                           <a
                             href="/"
@@ -141,7 +143,7 @@ const Activity = () => {
                         </div>
                       </div>
                       <div className="timeline-item">
-                        <i className="mdi mdi-microphone bg-info-lighten text-info timeline-icon" />
+                        <MdMic className="bg-info-lighten text-info timeline-icon" />
                         <div className="timeline-item-info">
                           <a
                             href="/"
@@ -191,7 +193,9 @@ const Activity = () => {
               }}
             />
           </div>
-        </div>{" "}
+        </div>
+        </div>
+        
         {/* end slimscroll */}
       </div>
     </div>

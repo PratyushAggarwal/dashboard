@@ -130,7 +130,7 @@ const Card1s = () => {
       <div className="row">
         <Card4 />
         <Card3s />
-        {/* <Activity /> */}
+        <Activity />
       </div>
     </div>
   );
