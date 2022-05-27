@@ -27,9 +27,9 @@ const Card1 = (props) => {
             </span>
             <span className="text-nowrap">Since last month</span>
           </p>
-        </div>{" "}
+        </div>
         {/* end card-body*/}
-      </div>{" "}
+      </div>
       {/* end card*/}
     </div>
   );
