@@ -1,12 +1,12 @@
 import React from "react";
 
-const Timeline = (props) => {
+const Timeline2 = (props) => {
     const Component=props.component
   return (
     <div className="timeline-item">
-      <Component className="bg-info-lighten text-info timeline-icon" />
+      <Component className="bg-primary-lighten text-primary timeline-icon" />
       <div className="timeline-item-info">
-        <a href="/" className="text-info fw-bold mb-1 d-block">
+        <a href="/" className="text-primary fw-bold mb-1 d-block">
           {props.heading}
         </a>
         <small>
@@ -21,4 +21,4 @@ const Timeline = (props) => {
   );
 };
 
-export default Timeline;
+export default Timeline2;

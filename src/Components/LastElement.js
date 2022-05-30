@@ -2,6 +2,8 @@ import React from "react";
 import { MdUpload, MdMic } from "react-icons/md";
 import { GiCommercialAirplane } from "react-icons/gi";
 import Timeline from "./timeLine";
+import Timeline2 from "./timeline2";
+
 const Activity = () => {
   return (
     <div className="col-xl-3 col-lg-6 order-lg-1">
@@ -42,116 +44,49 @@ const Activity = () => {
                           time="5 minutes ago"
                           component={MdUpload}
                         />
-                        <div className="timeline-item">
-                          <GiCommercialAirplane className="bg-primary-lighten text-primary timeline-icon" />
-                          <div className="timeline-item-info">
-                            <a
-                              href="/"
-                              className="text-primary fw-bold mb-1 d-block"
-                            >
-                              Product on the Bootstrap Market
-                            </a>
-                            <small>
-                              Dave Gamache added
-                              <span className="fw-bold">Admin Dashboard</span>
-                            </small>
-                            <p className="mb-0 pb-2">
-                              <small className="text-muted">
-                                30 minutes ago
-                              </small>
-                            </p>
-                          </div>
-                        </div>
-                        <div className="timeline-item">
-                          <MdMic className="bg-info-lighten text-info timeline-icon" />
-                          <div className="timeline-item-info">
-                            <a
-                              href="/"
-                              className="text-info fw-bold mb-1 d-block"
-                            >
-                              Robert Delaney
-                            </a>
-                            <small>
-                              Send you message
-                              <span className="fw-bold">"Are you there?"</span>
-                            </small>
-                            <p className="mb-0 pb-2">
-                              <small className="text-muted">2 hours ago</small>
-                            </p>
-                          </div>
-                        </div>
-                        <div className="timeline-item">
-                          <MdUpload className="bg-primary-lighten text-primary timeline-icon" />
-                          <div className="timeline-item-info">
-                            <a
-                              href="/"
-                              className="text-primary fw-bold mb-1 d-block"
-                            >
-                              Audrey Tobey
-                            </a>
-                            <small>
-                              Uploaded a photo
-                              <span className="fw-bold">"Error.jpg"</span>
-                            </small>
-                            <p className="mb-0 pb-2">
-                              <small className="text-muted">14 hours ago</small>
-                            </p>
-                          </div>
-                        </div>
-                        <div className="timeline-item">
-                          <MdUpload className="bg-info-lighten text-info timeline-icon" />
-                          <div className="timeline-item-info">
-                            <a
-                              href="/"
-                              className="text-info fw-bold mb-1 d-block"
-                            >
-                              You sold an item
-                            </a>
-                            <small>
-                              Paul Burgess just purchased “Hyper - Admin
-                              Dashboard”!
-                            </small>
-                            <p className="mb-0 pb-2">
-                              <small className="text-muted">16 hours ago</small>
-                            </p>
-                          </div>
-                        </div>
-                        <div className="timeline-item">
-                          <GiCommercialAirplane className="bg-primary-lighten text-primary timeline-icon" />
-                          <div className="timeline-item-info">
-                            <a
-                              href="/"
-                              className="text-primary fw-bold mb-1 d-block"
-                            >
-                              Product on the Bootstrap Market
-                            </a>
-                            <small>
-                              Dave Gamache added
-                              <span className="fw-bold">Admin Dashboard</span>
-                            </small>
-                            <p className="mb-0 pb-2">
-                              <small className="text-muted">22 hours ago</small>
-                            </p>
-                          </div>
-                        </div>
-                        <div className="timeline-item">
-                          <MdMic className="bg-info-lighten text-info timeline-icon" />
-                          <div className="timeline-item-info">
-                            <a
-                              href="/"
-                              className="text-info fw-bold mb-1 d-block"
-                            >
-                              Robert Delaney
-                            </a>
-                            <small>
-                              Send you message
-                              <span className="fw-bold">"Are you there?"</span>
-                            </small>
-                            <p className="mb-0 pb-2">
-                              <small className="text-muted">2 days ago</small>
-                            </p>
-                          </div>
-                        </div>
+                        <Timeline2
+                          heading="Product on the Bootstrap Market"
+                          statement="Dave Gamache added"
+                          statement2=" Admin Dashboard"
+                          time="30 minutes ago"
+                          component={GiCommercialAirplane}
+                        />
+                        <Timeline
+                          heading="Robert Delaney"
+                          statement="Send you message"
+                          statement2=" Are you there?"
+                          time="2 hours ago"
+                          component={MdMic}
+                        />
+                        <Timeline2
+                          heading="Audrey Tobey"
+                          statement="Uploaded a photo"
+                          statement2=" Error.jpg"
+                          time="14 hours ago"
+                          component={MdUpload}
+                        />
+                        <Timeline
+                          heading="You sold an item"
+                          statement="Paul Burgess just purchased “Hyper - Admin
+                          Dashboard”!"
+                          statement2=""
+                          time="16 hours ago"
+                          component={MdUpload}
+                        />
+                        <Timeline2
+                          heading="Product on the Bootstrap Market"
+                          statement="Dave Gamache added"
+                          statement2=" Admin Dashboard"
+                          time="22 hours ago"
+                          component={GiCommercialAirplane}
+                        />
+                        <Timeline
+                          heading="Robert Delaney"
+                          statement="Send you message"
+                          statement2="Are you there?"
+                          time="16 hours ago"
+                          component={MdMic}
+                        />
                       </div>
                       {/* end timeline */}
                     </div>
