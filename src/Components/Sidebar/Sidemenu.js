@@ -21,7 +21,7 @@ const routes1 = [
     {
         path: "/",
         name: "Dashboard",
-        icon: <BiHomeAlt />,
+        icon: <BiHomeAlt size={18}/>,
         sub: true,
         open: false,
         subroute: [
@@ -50,19 +50,19 @@ const routes2 = [
     {
         path: "/calender",
         name: "Calender",
-        icon: <FiCalendar />,
+        icon: <FiCalendar size={18}/>,
         sub: false,
     },
     {
         path: "/chat",
         name: "Chat",
-        icon: <IoChatbubblesOutline />,
+        icon: <IoChatbubblesOutline size={18}/>,
         sub: false,
     },
     {
         path: "/crm",
         name: "CRM",
-        icon: <MdOutlineSpeed />,
+        icon: <MdOutlineSpeed size={18}/>,
         sub: true,
         subroute: [
             {
@@ -90,7 +90,7 @@ const routes2 = [
     {
         path: "/ecommerce",
         name: "Ecommerce",
-        icon: <AiOutlineShop />,
+        icon: <AiOutlineShop size={18}/>,
         sub: true,
         subroute: [
             {
@@ -110,7 +110,7 @@ const routes2 = [
     {
         path: "/email",
         name: "Email",
-        icon: <HiOutlineMail />,
+        icon: <HiOutlineMail size={18}/>,
         sub: true,
         subroute: [
             {
@@ -127,7 +127,7 @@ const routes2 = [
     {
         path: "/projects",
         name: "Projects",
-        icon: <BsBag />,
+        icon: <BsBag size={18}/>,
         sub: true,
         subroute: [
             {
@@ -147,13 +147,13 @@ const routes2 = [
     {
         path: "/socialfeed",
         name: "Social Feed",
-        icon: <RiRssLine />,
+        icon: <RiRssLine size={18}/>,
         sub: false,
     },
     {
         path: "/tasks",
         name: "Tasks",
-        icon: <RiTodoLine />,
+        icon: <RiTodoLine size={18}/>,
         sub: true,
         subroute: [
             {
@@ -173,7 +173,7 @@ const routes2 = [
     {
         path: "/filemanager",
         name: "File Manager",
-        icon: <GoFileSubmodule />,
+        icon: <GoFileSubmodule size={18}/>,
         sub: false,
     },
 ];
@@ -182,7 +182,7 @@ const routes3 = [
     {
         path: "/pages",
         name: "Pages",
-        icon: <IoNewspaperOutline />,
+        icon: <IoNewspaperOutline size={18}/>,
         sub: true,
         subroute: [
             {
@@ -202,12 +202,12 @@ const routes3 = [
     {
         path: "/landing",
         name: "Landing",
-        icon: <BsGlobe />,
+        icon: <BsGlobe size={18}/>,
     },
     {
         path: "/layouts",
         name: "Layouts",
-        icon: <RiWindowLine />,
+        icon: <RiWindowLine size={18}/>,
         sub: true,
         subroute: [
             {
@@ -231,7 +231,7 @@ const routes4 = [
     {
         path: "/baseui",
         name: "Base UI",
-        icon: <HiOutlineCube />,
+        icon: <HiOutlineCube size={18}/>,
         sub: true,
         subroute: [
             {
@@ -251,7 +251,7 @@ const routes4 = [
     {
         path: "/extendedui",
         name: "Extended UI",
-        icon: <RiBookmarkFill />,
+        icon: <RiBookmarkFill size={18}/>,
         sub: true,
         subroute: [
             {
@@ -271,12 +271,12 @@ const routes4 = [
     {
         path: "/widgets",
         name: "Widgets",
-        icon: <RiStackLine />,
+        icon: <RiStackLine size={18}/>,
     },
     {
         path: "/icons",
         name: "Icons",
-        icon: <GiSteeringWheel />,
+        icon: <GiSteeringWheel size={18}/>,
         sub: true,
         subroute: [
             {
@@ -292,7 +292,7 @@ const routes4 = [
     {
         path: "/forms",
         name: "Forms",
-        icon: <FaWpforms />,
+        icon: <FaWpforms size={18}/>,
         sub: true,
         subroute: [
             {
@@ -308,7 +308,7 @@ const routes4 = [
     {
         path: "/charts",
         name: "Charts",
-        icon: <RiFileChartLine />,
+        icon: <RiFileChartLine size={18}/>,
         sub: true,
         subroute: [
             {
@@ -324,17 +324,17 @@ const routes4 = [
     {
         path: "/tables",
         name: "Tables",
-        icon: <AiOutlineTable />,
+        icon: <AiOutlineTable size={18}/>,
     },
     {
         path: "/maps",
         name: "Maps",
-        icon: <BiMap />,
+        icon: <BiMap size={18}/>,
     },
     {
         path: "/multilevel",
         name: "MultiLevel",
-        icon: <GoFileSubmodule />,
+        icon: <GoFileSubmodule size={18}/>,
     },
 
 ];

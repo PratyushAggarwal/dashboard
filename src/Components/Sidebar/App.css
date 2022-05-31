@@ -300,3 +300,8 @@ a{
 .noti{
   color: black;
 }
+
+.routes2 .icon{
+  /* box-sizing: border-box; */
+  padding: 3px;
+}
