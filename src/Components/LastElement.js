@@ -122,8 +122,6 @@ const Activity = () => {
             </div>
           </div>
         </div>
-
-        {/* end slimscroll */}
       </div>
     </div>
   );

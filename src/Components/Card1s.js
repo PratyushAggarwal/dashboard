@@ -12,6 +12,7 @@ import { RiCheckboxBlankCircleFill } from "react-icons/ri";
 import Card4 from "./card4";
 import Card3s from "./card3s";
 import Activity from "./LastElement";
+import ViewStatement from "./viewstatement";
 
 const Card1s = () => {
   return (
@@ -99,7 +100,7 @@ const Card1s = () => {
                   </div>
                 </div>
               </div>
-
+              <ViewStatement />
               <div dir="ltr">
                 <ApexChart2 />
               </div>

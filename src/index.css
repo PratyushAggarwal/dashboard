@@ -772,3 +772,12 @@ tbody, td, tfoot, th, thead, tr {
     padding: 65px 10px 65px;
   }
 }
+
+.dash-item-overlay {
+  position: absolute;
+  text-align: left;
+  left: 8%;
+  max-width: 350px;
+  padding: 20px;
+  z-index: 1;
+}
