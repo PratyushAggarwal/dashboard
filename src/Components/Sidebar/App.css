@@ -1,0 +1,302 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+.menu {
+  background: #313a46;
+  color: white;
+  width: 260px;
+  position: absolute;
+  margin-top: 0;
+  /* margin-left: 78px; */
+}
+
+.menu-close{
+  position: absolute;
+  margin-top: 0;
+  background: #313a46;
+  color: white;
+  width: 78px;
+  /* margin-left: 78px; */
+}
+.menu-close .top_section{
+  display: none;
+}
+
+.menu .top_section1{
+  display: none;
+}
+
+.menu-close .routes1 .elements .link_text{
+  display: none;
+}
+
+.menu-close .routes1 .elements .icon:hover{
+  color: white;
+}
+
+.menu-close .routes2 .elements .link_text{
+  display: none;
+}
+
+.menu-close .routes3 .elements .link_text{
+  display: none;
+}
+
+.menu-close .routes4 .elements .link_text{
+  display: none;
+}
+
+.menu-close .routes1 .elements .arrowicon{
+  display: none;
+}
+
+.menu-close .routes2 .elements .arrowicon{
+  display: none;
+}
+
+.menu-close .routes3 .elements .arrowicon{
+  display: none;
+}
+
+.menu-close .routes4 .elements .arrowicon{
+  display: none;
+}
+
+.menu-close .top_section{
+  margin-bottom: 15px;
+}
+
+.menu-close .description{
+  display: none;
+}
+
+.top_section{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top_section1{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  width:45%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+
+
+.description{
+  padding: 12px 30px;
+  letter-spacing: .05em;
+  pointer-events: none;
+  cursor: default;
+  font-size: .6875rem;
+  text-transform: uppercase;
+  color: #8391a2;
+  font-weight: 700;
+}
+
+.elements{
+  padding: 12px 30px;
+  display: flex;
+  color: #8391a2;
+  gap: 10px;
+  transition: all 0.4s ease;
+}
+
+.elements:hover{
+  color:#C7D5F6;
+}
+
+.subelements{
+  padding: 12px 30px;
+  display: flex;
+  color: #8391a2;
+  margin-left:25px;
+}
+
+.subelements:hover{
+  color:#C7D5F6;
+}
+
+.bars{
+  position:absolute;
+  margin-left: 260px;
+  display: flex;
+  gap: 20px;
+  width:100%;
+  height:65px;
+  background-color: white;
+}
+
+.search{
+  margin-top: -8px;
+}
+
+.search-icon{
+  margin-top: 8px;
+  margin-left: 5px;
+}
+
+.bars-close{
+  background-color: white;
+  position:absolute;
+  margin-left: 78px;
+  display: flex;
+  gap: 20px;
+  width:100%;
+  height:65px;
+}
+
+.link_text{
+  margin-top: -2px;
+}
+
+.arrowicon{
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 75%;
+  width: 20px;
+  transition-delay: 1s;
+}
+
+.link{
+  display: flex;
+}
+
+.component{
+  position: absolute;
+}
+
+ .more-icons{
+   display:flex;
+   margin-left: 40%;
+   gap:20px;
+   margin-top: 20px;
+ }
+
+ .flag{
+   width:27px;
+   height:18px;
+ }
+
+ .lang{
+   gap:8px;
+   display:flex;
+   margin-top: 6px;
+ }
+
+ .eng{
+   margin-top: -4px;
+ }
+
+ .list{
+   margin-top: 25px;
+   margin-left: 20px;
+ }
+
+ .search{
+  margin-top: 17px;
+ }
+
+ .rest-close{
+   height: 100%;
+   width:96%;
+   margin-top: 70px;
+   margin-left: 78px;
+   background-color: rgb(240 241 244);
+   position:absolute;
+ }
+
+ .rest{
+  height: 100%;
+  width:86.5%;
+  margin-top: 70px;
+  margin-left: 260px;
+  background-color: rgb(240 241 244);
+  position:absolute;
+}
+
+.bars-close .profile{
+  width:110%;
+  display: flex;
+  margin-right: 8%;
+  background-color: rgb(248 249 252);
+  border-color: #8391a2;
+  color:black;
+}
+
+.bars .profile{
+  width:110%;
+  display: flex;
+  margin-right: 8%;
+  background-color: rgb(248 249 252);
+  border-color: #8391a2;
+  color:black;
+}
+
+.profile-img{
+  width:40px;
+  height:40px;
+  margin-top: 15px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.pr-name{
+  margin-top: 12px;
+  display: block;
+  margin-left: 5px;
+}
+
+.input-group{
+  background-color: rgb(240 241 244);
+  border-radius: 5px 0px 0px 5px;
+}
+
+#top-search{
+  background-color: rgb(240 241 244);
+  border-color: rgb(240 241 244);
+}
+
+.item{
+  transition-delay: 1s;
+}
+
+.dropdown-item{
+  gap:10px;
+  display:flex;
+}
+
+.dropdown{
+  display:flex;
+  color:black;
+}
+
+.eng{
+  display:flex;
+  gap:10px;
+  color:black;
+}
+
+.profile-icons{
+  margin-top:5px;
+}
+
+.noti{
+  color: black;
+}

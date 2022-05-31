@@ -13,6 +13,7 @@ import Card4 from "./card4";
 import Card3s from "./card3s";
 import Activity from "./LastElement";
 import ViewStatement from "./viewstatement";
+import "../index.css"
 
 const Card1s = () => {
   return (

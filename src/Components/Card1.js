@@ -14,7 +14,7 @@ const Card1 = (props) => {
             {props.title}
           </h5>
           <h3 className="mt-3 mb-3 h3">{props.count}</h3>
-          <p className="mb-0 text-muted">
+          <p className="mb-1 text-muted">
             <span
               className={
                 props.increasing === "true"
