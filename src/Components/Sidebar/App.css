@@ -11,10 +11,10 @@ a{
 .menu {
   background: #313a46;
   color: white;
+  height: 100%;
   width: 260px;
   position: absolute;
   margin-top: 0;
-
   /* margin-left: 78px; */
 }
 
@@ -24,6 +24,7 @@ a{
   background: #313a46;
   color: white;
   width: 78px;
+  height: 100%;
   /* margin-left: 78px; */
 }
 .menu-close .top_section{

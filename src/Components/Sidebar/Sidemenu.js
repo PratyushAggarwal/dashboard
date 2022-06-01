@@ -341,7 +341,7 @@ const routes4 = [
 
 const SideBar = ({ children }) => {
     const [dash, setDash] = useState("None");
-    const [name, setName] = useState("menu-close window-full");
+    const [name, setName] = useState("menu-close");
     const [bar, setBar] = useState("bars-close");
     const [rest, setRest] = useState("rest-close");
 
@@ -359,21 +359,24 @@ const SideBar = ({ children }) => {
 
     function changeName(e) {
         if (name === "menu") {
-            setName("menu-close window-full");
+            setName("menu-close");
             setBar("bars-close");
             setRest("rest-close");
         }
         else {
-            setName("menu window-full");
+            setName("menu");
             setBar("bars");
             setRest("rest");
         }
     }
 
+    // console.log(document.getElementById("content").scrollHeight);
+    // let x = element.scrollHeight;
+
     return (
         <div className='wrapper'>
             <div className="main.container">
-            <motion.div className={name}>
+                    <motion.div className={name} >
                     <div className="top_section" ><img src="https://coderthemes.com/hyper/saas/assets/images/logo.png" alt="logo" className="logo" /></div>
                     <div className="top_section1" ><img src="https://coderthemes.com/hyper/saas/assets/images/logo_sm.png" alt="logo" className="logo" /></div>
                     <div className="description">Navigation</div>
@@ -477,8 +480,9 @@ const SideBar = ({ children }) => {
                             </div>
                         ))}
                     </section>
-                </motion.div>
-                <div className='content-page'>
+                    </motion.div>
+                <div className='content-page' id="content">
+                    {/* {console.log(document.getElementById("content").scrollHeight)} */}
                 <div className={bar}>
                     <AiOutlineMenu size={20} width={25} onClick={changeName} className="list" />
                     <form className="search">
