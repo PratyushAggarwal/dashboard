@@ -1,5 +1,6 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
+import data from "./data/chartdata.json";
 
 var labelFormatter = function (value) {
   var val = Math.abs(value);
@@ -103,7 +104,7 @@ const ApexChart1 = () =>{
       <div id="chart">
         <ReactApexChart
           options={grid}
-          series={series}
+          series={data}
           type="bar"
           height={256}
           width="100%"
