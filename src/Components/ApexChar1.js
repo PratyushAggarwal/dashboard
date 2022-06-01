@@ -1,8 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import ReactApexChart from "react-apexcharts";
-import {Navigate} from 'react-router-dom';
-import {useNavigate} from 'react-router-dom';
-
 
 var labelFormatter = function (value) {
   var val = Math.abs(value);
@@ -11,11 +8,6 @@ var labelFormatter = function (value) {
   }
   return val;
 };
-
-
-
-
-
 
 const series = [
   {
@@ -38,14 +30,10 @@ const series = [
 
 
 const ApexChart1 = () =>{
-  const navigate = useNavigate();
 
   var routeChange = function (index) {
-    // let navigate = useNavigate();
     console.log("hello");
     window.open("https://www.youtube.com/watch?v=kMUdvZLljpM");
-    // this.navigate('/calender');
-    // this.navigate('www.google.com');
   }
   
 
