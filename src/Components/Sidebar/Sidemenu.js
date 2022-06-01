@@ -341,7 +341,7 @@ const routes4 = [
 
 const SideBar = ({ children }) => {
     const [dash, setDash] = useState("None");
-    const [name, setName] = useState("menu-close");
+    const [name, setName] = useState("menu-close window-full");
     const [bar, setBar] = useState("bars-close");
     const [rest, setRest] = useState("rest-close");
 
@@ -359,12 +359,12 @@ const SideBar = ({ children }) => {
 
     function changeName(e) {
         if (name === "menu") {
-            setName("menu-close");
+            setName("menu-close window-full");
             setBar("bars-close");
             setRest("rest-close");
         }
         else {
-            setName("menu");
+            setName("menu window-full");
             setBar("bars");
             setRest("rest");
         }
@@ -373,6 +373,112 @@ const SideBar = ({ children }) => {
     return (
         <div className='wrapper'>
             <div className="main.container">
+            <motion.div className={name}>
+                    <div className="top_section" ><img src="https://coderthemes.com/hyper/saas/assets/images/logo.png" alt="logo" className="logo" /></div>
+                    <div className="top_section1" ><img src="https://coderthemes.com/hyper/saas/assets/images/logo_sm.png" alt="logo" className="logo" /></div>
+                    <div className="description">Navigation</div>
+
+                    <section className="routes1">
+                        {routes1.map((route) => (
+                            <div className="item">
+                                    <NavLink to={route.path} key={route.name} className="elements" onClick={() => clickHandler(route.name)}>
+                                        <div className="icon">
+                                            {route.icon}
+                                        </div>
+                                        <div className="link_text">Dashboard</div>
+                                        <div className="arrowicon" >
+                                            {dash!==route.name && route.sub && <MdOutlineKeyboardArrowRight />}
+                                        </div>
+                                        <div className="arrowicon" >
+                                            {dash===route.name && route.sub && <MdKeyboardArrowDown />}
+                                        </div>
+                                    </NavLink>
+                                    {dash===route.name && route.subroute.map((subroute) => (
+                                        <NavLink to={subroute.path} key={subroute.name} className="subelements">
+                                            <div className="link_text">{subroute.name}</div>
+                                        </NavLink>
+                                    ))}
+                            </div>
+                        ))}
+                    </section>
+
+                    <div className="description">Apps</div>
+                    <section className="routes2">
+                        {routes2.map((route) => (
+                            <div>
+                                <NavLink to={route.path} key={route.name} className="elements" onClick={() => clickHandler(route.name)}>
+                                    <div className="icon">
+                                        {route.icon}
+                                    </div>
+                                    <div className="link_text" >{route.name}</div>
+                                    <div className="arrowicon" >
+                                        {dash!==route.name && route.sub && <MdOutlineKeyboardArrowRight />}
+                                    </div>
+                                    <div className="arrowicon" >
+                                        {dash===route.name && route.sub && <MdKeyboardArrowDown />}
+                                    </div>
+                                </NavLink>
+                                {dash===route.name && route.subroute && route.subroute.map((subroute) => (
+                                    <NavLink to={subroute.path} key={subroute.name} className="subelements">
+                                        <div className="link_text">{subroute.name}</div>
+                                    </NavLink>
+                                ))}
+                            </div>
+
+                        ))}
+                    </section>
+
+                    <div className="description">Custom</div>
+                    <section className="routes3">
+                        {routes3.map((route) => (
+                            <div>
+                                <NavLink to={route.path} key={route.name} className="elements" onClick={() => clickHandler(route.name)}>
+                                    <div className="icon">
+                                        {route.icon}
+                                    </div>
+                                    <div className="link_text">{route.name}</div>
+                                    <div className="arrowicon" >
+                                        {dash!==route.name && route.sub && <MdOutlineKeyboardArrowRight />}
+                                    </div>
+                                    <div className="arrowicon" >
+                                        {dash===route.name && route.sub && <MdKeyboardArrowDown />}
+                                    </div>
+                                </NavLink>
+                                {dash===route.name && route.subroute && route.subroute.map((subroute) => (
+                                    <NavLink to={subroute.path} key={subroute.name} className="subelements">
+                                        <div className="link_text">{subroute.name}</div>
+                                    </NavLink>
+                                ))}
+                            </div>
+                        ))}
+                    </section>
+
+                    <div className="description">Components</div>
+                    <section className="routes4">
+                        {routes4.map((route) => (
+                            <div>
+                                <NavLink to={route.path} key={route.name} className="elements" onClick={() => clickHandler(route.name)}>
+                                    <div className="icon">
+                                        {route.icon}
+                                    </div>
+                                    <div className="link_text">{route.name}</div>
+                                    <div className="arrowicon" >
+                                        {dash!==route.name && route.sub && <MdOutlineKeyboardArrowRight />}
+                                    </div>
+                                    <div className="arrowicon" >
+                                        {dash===route.name && route.sub && <MdKeyboardArrowDown />}
+                                    </div>
+                                </NavLink>
+                                {dash===route.name && route.subroute && route.subroute.map((subroute) => (
+                                    <NavLink to={subroute.path} key={subroute.name} className="subelements">
+                                        <div className="link_text">{subroute.name}</div>
+                                    </NavLink>
+                                ))}
+                            </div>
+                        ))}
+                    </section>
+                </motion.div>
+                <div className='content-page'>
                 <div className={bar}>
                     <AiOutlineMenu size={20} width={25} onClick={changeName} className="list" />
                     <form className="search">
@@ -487,113 +593,10 @@ const SideBar = ({ children }) => {
                 <div className={rest}>
                     {children}
                 </div>
-                <motion.div className={name}>
-                    <div className="top_section" ><img src="https://coderthemes.com/hyper/saas/assets/images/logo.png" alt="logo" className="logo" /></div>
-                    <div className="top_section1" ><img src="https://coderthemes.com/hyper/saas/assets/images/logo_sm.png" alt="logo" className="logo" /></div>
-                    <div className="description">Navigation</div>
-
-                    <section className="routes1">
-                        {routes1.map((route) => (
-                            <div className="item">
-                                    <NavLink to={route.path} key={route.name} className="elements" onClick={() => clickHandler(route.name)}>
-                                        <div className="icon">
-                                            {route.icon}
-                                        </div>
-                                        <div className="link_text">Dashboard</div>
-                                        <div className="arrowicon" >
-                                            {dash!==route.name && route.sub && <MdOutlineKeyboardArrowRight />}
-                                        </div>
-                                        <div className="arrowicon" >
-                                            {dash===route.name && route.sub && <MdKeyboardArrowDown />}
-                                        </div>
-                                    </NavLink>
-                                    {dash===route.name && route.subroute.map((subroute) => (
-                                        <NavLink to={subroute.path} key={subroute.name} className="subelements">
-                                            <div className="link_text">{subroute.name}</div>
-                                        </NavLink>
-                                    ))}
-                            </div>
-                        ))}
-                    </section>
-
-                    <div className="description">Apps</div>
-                    <section className="routes2">
-                        {routes2.map((route) => (
-                            <div>
-                                <NavLink to={route.path} key={route.name} className="elements" onClick={() => clickHandler(route.name)}>
-                                    <div className="icon">
-                                        {route.icon}
-                                    </div>
-                                    <div className="link_text" >{route.name}</div>
-                                    <div className="arrowicon" >
-                                        {dash!==route.name && route.sub && <MdOutlineKeyboardArrowRight />}
-                                    </div>
-                                    <div className="arrowicon" >
-                                        {dash===route.name && route.sub && <MdKeyboardArrowDown />}
-                                    </div>
-                                </NavLink>
-                                {dash===route.name && route.subroute && route.subroute.map((subroute) => (
-                                    <NavLink to={subroute.path} key={subroute.name} className="subelements">
-                                        <div className="link_text">{subroute.name}</div>
-                                    </NavLink>
-                                ))}
-                            </div>
-
-                        ))}
-                    </section>
-
-                    <div className="description">Custom</div>
-                    <section className="routes3">
-                        {routes3.map((route) => (
-                            <div>
-                                <NavLink to={route.path} key={route.name} className="elements" onClick={() => clickHandler(route.name)}>
-                                    <div className="icon">
-                                        {route.icon}
-                                    </div>
-                                    <div className="link_text">{route.name}</div>
-                                    <div className="arrowicon" >
-                                        {dash!==route.name && route.sub && <MdOutlineKeyboardArrowRight />}
-                                    </div>
-                                    <div className="arrowicon" >
-                                        {dash===route.name && route.sub && <MdKeyboardArrowDown />}
-                                    </div>
-                                </NavLink>
-                                {dash===route.name && route.subroute && route.subroute.map((subroute) => (
-                                    <NavLink to={subroute.path} key={subroute.name} className="subelements">
-                                        <div className="link_text">{subroute.name}</div>
-                                    </NavLink>
-                                ))}
-                            </div>
-                        ))}
-                    </section>
-
-                    <div className="description">Components</div>
-                    <section className="routes4">
-                        {routes4.map((route) => (
-                            <div>
-                                <NavLink to={route.path} key={route.name} className="elements" onClick={() => clickHandler(route.name)}>
-                                    <div className="icon">
-                                        {route.icon}
-                                    </div>
-                                    <div className="link_text">{route.name}</div>
-                                    <div className="arrowicon" >
-                                        {dash!==route.name && route.sub && <MdOutlineKeyboardArrowRight />}
-                                    </div>
-                                    <div className="arrowicon" >
-                                        {dash===route.name && route.sub && <MdKeyboardArrowDown />}
-                                    </div>
-                                </NavLink>
-                                {dash===route.name && route.subroute && route.subroute.map((subroute) => (
-                                    <NavLink to={subroute.path} key={subroute.name} className="subelements">
-                                        <div className="link_text">{subroute.name}</div>
-                                    </NavLink>
-                                ))}
-                            </div>
-                        ))}
-                    </section>
-                </motion.div>
+                </div>
+                
                         
-                    </div>
+                </div>
         </div>
         
     );

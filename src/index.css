@@ -298,13 +298,14 @@ code {
 .wrapper{
   height: 100%;
   overflow: hidden;
-  width: 100%;
+  box-sizing: border-box;
 }
 
 .content-page{
   /* margin-left: 260px; */
   overflow: hidden;
-  padding: 7px 12px 65px;
+  box-sizing: border-box;
+  padding: 7px 0px 0px;
   min-height: 100vh;
 }
 

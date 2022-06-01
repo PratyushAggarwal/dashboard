@@ -1,7 +1,12 @@
 import React, { Component } from "react";
 import ReactApexChart from "react-apexcharts";
+import {Navigate} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
+
 
 class ApexChart1 extends Component {
+  
+  // navigate = useNavigate();
   constructor(props) {
     super(props);
 
@@ -12,6 +17,15 @@ class ApexChart1 extends Component {
       }
       return val;
     };
+
+    var routeChange = function (index) {
+      console.log("hello");
+      return(
+        <Navigate to="/calender" />
+      );
+      // this.navigate('/calender');
+      // this.navigate('www.google.com');
+    }
 
     this.state = {
       series: [
@@ -39,6 +53,12 @@ class ApexChart1 extends Component {
           type: "bar",
           height: "300px",
           stacked: true,
+          events:{
+            click: (event, chartContext, config) =>{
+              console.log(event, chartContext, config);
+              routeChange(config.dataPointIndex);
+            }
+          },
           toolbar: {
             show: false,
           },
@@ -88,6 +108,7 @@ class ApexChart1 extends Component {
       },
     };
   }
+
 
   render() {
     return (
