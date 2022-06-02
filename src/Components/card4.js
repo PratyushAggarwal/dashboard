@@ -1,7 +1,9 @@
 import React from "react";
 import Elements from "./Element4";
+import Elementsdata from "./data/topselling.json";
 
 const Card4 = (props) => {
+  const elements = Elementsdata.map(element => <Elements name={element.name} date={element.date} price={element.price} quantity={element.quantity} amount={element.amount} />);
   return (
     <div className="col-xl-6 col-lg-12 order-lg-2 order-xl-1">
       <div className="card">
@@ -15,7 +17,8 @@ const Card4 = (props) => {
           <div className="table-responsive">
             <table className="table table-centered table-nowrap table-hover mb-0">
               <tbody>
-                <Elements
+                {elements}
+                {/* <Elements
                   name="ASOS Ridley High Waist"
                   date="07 April 2018"
                   price="$79.49"
@@ -49,7 +52,7 @@ const Card4 = (props) => {
                   price="$28.49"
                   quantity="69"
                   amount="$1,965.81"
-                />
+                /> */}
               </tbody>
             </table>
           </div>
