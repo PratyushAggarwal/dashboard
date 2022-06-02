@@ -10,26 +10,6 @@ var labelFormatter = function (value) {
   return val;
 };
 
-const series = [
-  {
-    name: "PRODUCT A",
-    data: [
-      144000, 55000, 41000, 67000, 22000, 43000, 144000, 55000, 41000,
-      67000, 22000, 43000,
-    ],
-  },
-  {
-    name: "PRODUCT B",
-    data: [
-      53000, 83000, 40000, 38000, 93000, 127000, 13000, 93000, 120000,
-      18000, 113000, 27000,
-    ],
-  },
-];
-
-
-
-
 const ApexChart1 = () =>{
 
   var routeChange = function (index) {

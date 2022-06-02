@@ -1,11 +1,28 @@
 import React from "react";
 import { VectorMap } from "react-jvectormap";
-import data from "./data/mapdata.json"
+import data from "./data/mapdata.json";
+import Geocode from "react-geocode";
+
+function Check123() {
+  console.log("abcd");
+  Geocode.fromAddress("Taj Mahal").then(
+  (response) => {
+    const { lat, lng } = response.results[0].geometry.location;
+    console.log("true",lat,lng);
+  },
+  (error) => {
+    console.error(error);
+  }
+);
+}
+
 
 export default class Map extends React.Component {
+  
   render() {
     return (
       <div style={{ width: "100%", height: 224 }}>
+        {Check123()}
         <VectorMap
           map={"world_mill"}
           backgroundColor="#FFFF"

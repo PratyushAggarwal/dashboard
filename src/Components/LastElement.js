@@ -3,10 +3,16 @@ import { MdUpload, MdMic } from "react-icons/md";
 import { GiCommercialAirplane } from "react-icons/gi";
 import Timeline from "./timeLine";
 import Timeline2 from "./timeline2";
+import datas from "./data/activity.json"
 
 const Activity = () => {
+  var index=0;
+  const iconDetails = {upload : MdUpload, airplane: GiCommercialAirplane, mic: MdMic};
+  const timeline = datas.map(data => <Timeline heading={data.heading} statement={data.statement} statement2={data.statement2} time={data.time} component={iconDetails[data.icon]}/>)
+
   return (
     <div className="col-xl-3 col-lg-6 order-lg-1">
+      {console.log(iconDetails[datas[0].icon])}
       <div className="card">
         <div className="card-body pb-0">
           <div className="d-flex justify-content-between align-items-center mb-2">
@@ -38,55 +44,7 @@ const Activity = () => {
                       style={{ padding: "0px 0px" }}
                     >
                       <div className="timeline-alt py-0">
-                        <Timeline
-                          heading="You sold an item"
-                          statement=" Paul Burgess just purchased “Hyper - Admin Dashboard”!"
-                          time="5 minutes ago"
-                          component={MdUpload}
-                        />
-                        <Timeline2
-                          heading="Product on the Bootstrap Market"
-                          statement="Dave Gamache added"
-                          statement2=" Admin Dashboard"
-                          time="30 minutes ago"
-                          component={GiCommercialAirplane}
-                        />
-                        <Timeline
-                          heading="Robert Delaney"
-                          statement="Send you message"
-                          statement2=" Are you there?"
-                          time="2 hours ago"
-                          component={MdMic}
-                        />
-                        <Timeline2
-                          heading="Audrey Tobey"
-                          statement="Uploaded a photo"
-                          statement2=" Error.jpg"
-                          time="14 hours ago"
-                          component={MdUpload}
-                        />
-                        <Timeline
-                          heading="You sold an item"
-                          statement="Paul Burgess just purchased “Hyper - Admin
-                          Dashboard”!"
-                          statement2=""
-                          time="16 hours ago"
-                          component={MdUpload}
-                        />
-                        <Timeline2
-                          heading="Product on the Bootstrap Market"
-                          statement="Dave Gamache added"
-                          statement2=" Admin Dashboard"
-                          time="22 hours ago"
-                          component={GiCommercialAirplane}
-                        />
-                        <Timeline
-                          heading="Robert Delaney"
-                          statement="Send you message"
-                          statement2="Are you there?"
-                          time="16 hours ago"
-                          component={MdMic}
-                        />
+                        {timeline}
                       </div>
                       {/* end timeline */}
                     </div>
