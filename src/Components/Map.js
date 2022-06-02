@@ -1,5 +1,6 @@
 import React from "react";
 import { VectorMap } from "react-jvectormap";
+import data from "./data/mapdata.json"
 
 export default class Map extends React.Component {
   render() {
@@ -42,32 +43,7 @@ export default class Map extends React.Component {
               "fill-opacity": 0.8,
             },
           }}
-          markers={[
-            {
-              latLng: [37.733795, -122.446747],
-              name: "San Francisco",
-              value: 20,
-            },
-            {
-              latLng: [11, 12.45],
-              name: "WOW",
-              value: 30,
-            },
-            {
-              latLng: [-33, 12.45],
-              name: "WAZZZA",
-              value: 16,
-            },
-            {
-              latLng: [12.848681, 77.677326],
-              name: "Siemens",
-              value: 24,
-            },
-            {
-              latLng: [15.87, 100.99],
-              name: "thailand",
-            },
-          ]}
+          markers={data}
           ref="map"
           containerStyle={{
             width: "100%",

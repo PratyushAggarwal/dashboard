@@ -15,11 +15,14 @@ import Activity from "./LastElement";
 import ViewStatement from "./viewstatement";
 import "../index.css"
 import Carddata from './data/cardsdata.json';
+import progressbardata from './data/mapdata.json';
 
 const Card1s = () => {
   const IconComponents = [FaUsers,MdAddShoppingCart,FaDollarSign,BiPulse];
   var index=0;
   const Cards = Carddata.map(card => <Card1 title={card.title} count={card.count} percentage={card.percentage} increasing={card.increasing} component={IconComponents[index++]} />)
+
+  const ProgressBars = progressbardata.map(bar => <ProgressBar name={bar.name} progress={bar.value}/>)
 
   return (
     <div className="container-fluid">
@@ -93,14 +96,15 @@ const Card1s = () => {
               <div className="mb-4 mt-3" styles={{ width: "100%" }}>
                 <Map width="100%" />
               </div>
-              <h5 className="mb-1 mt-0 fw-normal">New York</h5>
+              {ProgressBars}
+              {/* <h5 className="mb-1 mt-0 fw-normal">New York</h5>
               <ProgressBar progress="72" />
               <h5 className="mb-1 mt-0 fw-normal">San Francisco</h5>
               <ProgressBar progress="39" />
               <h5 className="mb-1 mt-0 fw-normal">Sydney</h5>
               <ProgressBar progress="25" />
               <h5 className="mb-1 mt-0 fw-normal">Singapore</h5>
-              <ProgressBar progress="61" />
+              <ProgressBar progress="61" /> */}
             </div>
           </div>
         </div>

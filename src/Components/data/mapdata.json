@@ -1,0 +1,22 @@
+[
+    {
+        "latLng": [40.730610, -73.935242],
+        "name": "New York",
+        "value": 72
+    },
+    {
+        "latLng": [37.733795, -122.446747],
+        "name": "San Francisco",
+        "value": 39
+    },
+    {
+        "latLng": [-33.86785, 151.20732],
+        "name": "Syndey",
+        "value": 25
+    },
+    {
+        "latLng": [1.290270, 103.851959],
+        "name": "Singapore",
+        "value": 61
+    }
+]

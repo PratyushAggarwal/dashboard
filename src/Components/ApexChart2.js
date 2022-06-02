@@ -1,6 +1,4 @@
-import { rgbToHex } from "@mui/material";
-import React, { Component } from "react";
-import Chart from "react-apexcharts";
+import React from "react";
 import ReactApexChart from "react-apexcharts";
 import data from "./data/revenue.json"
 
