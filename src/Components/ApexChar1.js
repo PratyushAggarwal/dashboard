@@ -12,9 +12,9 @@ var labelFormatter = function (value) {
 
 const ApexChart1 = () =>{
 
-  var routeChange = function (index) {
-    console.log("hello");
-    window.open("https://www.youtube.com/watch?v=kMUdvZLljpM");
+  var routeChange = function (index, series) {
+    // console.log("hello");
+    if(data[series].web[index]){window.open(data[series].web[index])};
   }
   
 
@@ -30,7 +30,7 @@ const ApexChart1 = () =>{
       events:{
         click: (event, chartContext, config) =>{
           console.log(event, chartContext, config);
-          routeChange(config.dataPointIndex);
+          routeChange(config.dataPointIndex,config.seriesIndex);
         }
       },
       toolbar: {

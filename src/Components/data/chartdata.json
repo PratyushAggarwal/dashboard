@@ -4,6 +4,20 @@
         "data": [
             144000, 55000, 41000, 67000, 22000, 43000, 144000, 55000, 41000,
             67000, 22000, 43000
+        ],
+        "web":[
+            "https://www.youtube.com/watch?v=pRiQeo17u6c",
+            "https://www.youtube.com/watch?v=zF6WuFGWoeA",
+            "https://www.youtube.com/watch?v=kMUdvZLljpM",
+            "https://www.youtube.com/watch?v=CshE6MCiyus",
+            "https://www.google.com/?gws_rd=ssl",
+            "https://www.youtube.com/watch?v=eK0IIyBlYew",
+            "https://www.youtube.com/watch?v=_d1nFPDzrAU",
+            "https://www.youtube.com/watch?v=Y2548TkfH8k",
+            "https://www.youtube.com/watch?v=kMUdvZLljpM",
+            "https://www.youtube.com/watch?v=pRiQeo17u6c",
+            "https://www.youtube.com/watch?v=zF6WuFGWoeA",
+            "https://www.youtube.com/watch?v=kMUdvZLljpM"
         ]
     },
     {
@@ -11,6 +25,20 @@
         "data": [
             53000, 83000, 40000, 38000, 93000, 127000, 13000, 93000, 120000,
             18000, 113000, 127000
+        ],
+        "web":[
+            "https://www.google.com/?gws_rd=ssl",
+            "https://www.youtube.com/watch?v=zF6WuFGWoeA",
+            "https://www.youtube.com/watch?v=kMUdvZLljpM",
+            "https://www.youtube.com/watch?v=pRiQeo17u6c",
+            "https://www.youtube.com/watch?v=zF6WuFGWoeA",
+            "https://www.youtube.com/watch?v=kMUdvZLljpM",
+            "https://www.youtube.com/watch?v=pRiQeo17u6c",
+            "https://www.youtube.com/watch?v=zF6WuFGWoeA",
+            "https://www.youtube.com/watch?v=kMUdvZLljpM",
+            "https://www.youtube.com/watch?v=pRiQeo17u6c",
+            "https://www.youtube.com/watch?v=zF6WuFGWoeA",
+            "https://www.youtube.com/watch?v=kMUdvZLljpM"
         ]
     }
 ]
