@@ -14,43 +14,19 @@ import Card3s from "./card3s";
 import Activity from "./LastElement";
 import ViewStatement from "./viewstatement";
 import "../index.css"
+import Carddata from './data/cardsdata.json';
 
 const Card1s = () => {
+  const IconComponents = [FaUsers,MdAddShoppingCart,FaDollarSign,BiPulse];
+  var index=0;
+  const Cards = Carddata.map(card => <Card1 title={card.title} count={card.count} percentage={card.percentage} increasing={card.increasing} component={IconComponents[index++]} />)
+
   return (
     <div className="container-fluid">
       <div className="row">
         <div className="col-xl-5 col-lg-6">
           <div className="row">
-            <Card1
-              title="Costumers"
-              count="36,254"
-              percentage="5.27"
-              component={FaUsers}
-              increasing="true"
-            />
-            <Card1
-              title="Orders"
-              count="5,543"
-              percentage="1.08"
-              component={MdAddShoppingCart}
-              increasing="false"
-            />
-          </div>
-          <div className="row">
-            <Card1
-              title="Revenue"
-              count="$6,254"
-              percentage="7.00"
-              component={FaDollarSign}
-              increasing="false"
-            />
-            <Card1
-              title="Growth"
-              count="+ 30.56%"
-              percentage="4.87"
-              component={BiPulse}
-              increasing="true"
-            />
+            {Cards}
           </div>
         </div>
         <div className="col-xl-7 col-lg-6">

@@ -17,12 +17,13 @@ const Card1 = (props) => {
           <p className="mb-1 text-muted">
             <span
               className={
-                props.increasing === "true"
+                props.increasing === true
                   ? "text-success me-2"
                   : "text-danger me-2"
               }
             >
-              {props.increasing === "true" ? <GoArrowUp /> : <GoArrowDown />}
+              {console.log(props.increasing)}
+              {props.increasing === true ? <GoArrowUp /> : <GoArrowDown />}
               {props.percentage}%
             </span>
             <span className="text-nowrap">Since last month</span>
