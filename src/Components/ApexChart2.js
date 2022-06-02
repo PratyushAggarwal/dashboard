@@ -2,12 +2,10 @@ import { rgbToHex } from "@mui/material";
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
 import ReactApexChart from "react-apexcharts";
+import data from "./data/revenue.json"
 
 function generateDayWiseTimeSeries(s, count) {
-  var values = [
-    [8, 3, 10, 4, 29, 19, 23],
-    [12, 1, 17, 7, 19, 16, 26],
-  ];
+  var values = data;
   var i = 0;
   var series = [];
   var x = new Date().getTime()-14*43200000;
