@@ -10,8 +10,8 @@ function generateDayWiseTimeSeries(s, count) {
   ];
   var i = 0;
   var series = [];
-  var x = new Date("11 Nov 2012").getTime();
-  x += 21600000;
+  var x = new Date().getTime()-14*43200000;
+  x += 64800000;
   while (i < count) {
     series.push([x, values[s][i]]);
     x += 86400000;
@@ -79,8 +79,8 @@ const option = {
   xaxis: {
     type: "datetime",
     tickPlacement: "on",
-    min: new Date("11 Nov 2012").getTime(),
-    max: new Date("18 Nov 2012").getTime() - 43200000,
+    min: new Date().getTime()-13*43200000,
+    max: new Date().getTime(),
     labels: {
       datetimeFormatter: {
         day: "dd MMM",
